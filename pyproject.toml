@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "py_btrees"
+version = "0.1.0"
+description = "UTCS DSC 395T: B-Trees"
+authors = ["Leo Orshansky <leoorsh@cs.utexas.edu>"]
+
+# prevent this package from being published by mistake
+exclude = ["**/*"]
+
+# note: dependencies
+#   The autograder repository is currently private and GitHub actions
+#   is unable to install it via poetry. Since this package is not going
+#   to be distributed, I'm essentially using deps/dev-deps to distinguish
+#   packages needed for GitHub Actions.
+
+[tool.poetry.dependencies]
+python = "^3.6.9"
+pytest = "^6"
+pytest-depends = "^1.0.1"
+mypy = "^0.910"
+
